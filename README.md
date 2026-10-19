@@ -61,15 +61,15 @@ $$
 
 where:
 
-- \(\mathbf{y}\) is the aligned CRISPR trace, including all four fluorescence channels.
-- \(\mathbf{X}\) contains the candidate WT-derived indel models.
-- \(\boldsymbol{\beta}\) contains their non-negative fitted coefficients.
+- $$\(\mathbf{y}\)$$ is the aligned CRISPR trace, including all four fluorescence channels.
+- $$\(\mathbf{X}\)$$ contains the candidate WT-derived indel models.
+- $$\(\boldsymbol{\beta}\)$$ contains their non-negative fitted coefficients.
 
 The coefficients are normalized to estimate the relative contribution of each modeled indel class. The editing efficiency is estimated as:
 
-\[
+$$
 \text{Editing efficiency} = 100\% - \text{WT fraction}
-\]
+$$
 
 The fit quality is summarized using \(R^2\).
 
