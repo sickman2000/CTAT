@@ -1,6 +1,6 @@
 # CRISPR Trace Analysis
 
-**CRISPR Trace Analysis** is an R Shiny application for estimating CRISPR/Cas9 editing efficiency and indel distributions from Sanger sequencing chromatograms (`.ab1` files).
+**CRISPR Trace Analysis** is an R Shiny application for estimating CRISPR/Cas9 (in this release SpCas9 only) editing efficiency and indel distributions from Sanger sequencing chromatograms (`.ab1` files).
 
 The application compares wild-type (WT) and CRISPR-edited sequencing traces, compensates for local differences in capillary electrophoresis, and estimates the relative contributions of different insertion and deletion sizes using non-negative least squares (NNLS) deconvolution.
 
