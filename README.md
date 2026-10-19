@@ -61,8 +61,9 @@ $$
 where:
 
 - $$\(\mathbf{y}\)$$ is the aligned CRISPR trace, including all four fluorescence channels.
-- $$\(\mathbf{X}\)$$ contains the candidate WT-derived indel models.
-- $$\(\hat{\beta}\)$$ contains their non-negative fitted coefficients.
+- $$\(\mathbf{X}\)$$ contains the candidate WT-derived indel models
+- $$(\beta)$$ is the vector of non-negative coefficients describing the contribution of each model to the observed signal.
+- $$(\hat{\beta})$$ is the estimated coefficient vector that minimizes the squared difference between the observed signal and the reconstructed signal.
 
 The coefficients are normalized to estimate the relative contribution of each modeled indel class. The editing efficiency is estimated as:
 
