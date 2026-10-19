@@ -58,13 +58,11 @@ $$
 \hat{\beta} = \underset{\beta \geq 0}{\min} \|y-X\beta\|_2^2
 $$
 
-where \(y\) represents the observed chromatogram signal, \(X\) contains the model signals for different indel sizes, and $$\(\hat{\beta}\)$$ contains the fitted non-negative coefficients.
-
 where:
 
 - $$\(\mathbf{y}\)$$ is the aligned CRISPR trace, including all four fluorescence channels.
 - $$\(\mathbf{X}\)$$ contains the candidate WT-derived indel models.
-- $$\(\boldsymbol{\beta}\)$$ contains their non-negative fitted coefficients.
+- $$\(\hat{\beta}\)$$ contains their non-negative fitted coefficients.
 
 The coefficients are normalized to estimate the relative contribution of each modeled indel class. The editing efficiency is estimated as:
 
