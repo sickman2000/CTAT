@@ -71,8 +71,6 @@ $$
 \text{Editing efficiency} = 100\% - \text{WT fraction}
 $$
 
-where $\mathbf{y}$ represents the observed chromatogram signal, $\mathbf{X}$ contains the model signals for different indel sizes, and $\hat{\boldsymbol{\beta}}$ contains the fitted non-negative coefficients.
-
 The fit quality is summarized using \(R^2\).
 
 **Important:** The indel models are simplified, WT-derived signal-shift models. Inserted nucleotide identities are not reconstructed, and the estimated fractions are model-dependent rather than direct measurements of individual alleles. The results should therefore be interpreted as estimates of the indel-size distribution, not as definitive sequence-level identification or quantification of every edited allele.
