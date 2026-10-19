@@ -83,26 +83,16 @@ The fit quality is summarized using \(R^2\).
 - **Biostrings** — DNA sequence handling, alignment, and reverse-complement matching
 - **nnls** — Non-negative least-squares deconvolution
 
-## Intended use
+CRISPR Trace Analysis
+Copyright © 2026 Sigurd Krieger
 
-CRISPR Trace Analysis is intended as a research tool for exploratory analysis of CRISPR/Cas9 editing outcomes from Sanger sequencing data. It provides visual and numerical diagnostics to help users assess chromatogram alignment and interpret estimated indel distributions.
+This project is licensed under the PolyForm Noncommercial License 1.0.0.
 
-Results depend on sequencing quality, target coverage, trace alignment, and the assumptions underlying the WT-derived indel models. In particular, poor-quality traces, incomplete coverage of the cleavage site, and complex editing outcomes may reduce the reliability of the estimates.
+You may use, modify, and redistribute this software for noncommercial purposes, subject to the terms of the license.
 
-## Status
+Commercial use is not permitted without separate permission from the copyright holder.
 
-This project is under active development. The analysis methods, visualization, and diagnostic features may evolve as the implementation is refined and validated.
+The software is provided "AS IS", without warranty of any kind. To the extent permitted by applicable law, the copyright holder shall not be liable for any damages arising from the use of this software.
 
-## Disclaimer
-
-CRISPR Trace Analysis is provided "AS IS", without warranty of any kind, express or implied.
-
-This software is intended for research and exploratory analysis only. It has not been validated for clinical or diagnostic use. The accuracy and reliability of the results are not guaranteed, and all results should be independently reviewed and experimentally validated before being used to support scientific conclusions.
-
-The software may contain errors or produce inaccurate estimates of genome-editing efficiency. Users are responsible for assessing its suitability for their intended application and for verifying the results.
-
-The authors accept no liability for damages or losses arising from the use of this software, to the extent permitted by applicable law.
-
-## License
-
-See the repository's `LICENSE` file for licensing terms.
+The complete license terms are available at:
+https://polyformproject.org/licenses/noncommercial/1.0.0
