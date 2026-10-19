@@ -93,6 +93,16 @@ Results depend on sequencing quality, target coverage, trace alignment, and the 
 
 This project is under active development. The analysis methods, visualization, and diagnostic features may evolve as the implementation is refined and validated.
 
+## Disclaimer
+
+CRISPR Trace Analysis is provided "AS IS", without warranty of any kind, express or implied.
+
+This software is intended for research and exploratory analysis only. It has not been validated for clinical or diagnostic use. The accuracy and reliability of the results are not guaranteed, and all results should be independently reviewed and experimentally validated before being used to support scientific conclusions.
+
+The software may contain errors or produce inaccurate estimates of genome-editing efficiency. Users are responsible for assessing its suitability for their intended application and for verifying the results.
+
+The authors accept no liability for damages or losses arising from the use of this software, to the extent permitted by applicable law.
+
 ## License
 
 See the repository's `LICENSE` file for licensing terms.
