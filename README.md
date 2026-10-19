@@ -55,13 +55,10 @@ The application constructs a set of candidate chromatogram models by shifting th
 The model coefficients are estimated by solving a non-negative least-squares optimization problem:
 
 $$
-\hat{\boldsymbol{\beta}}
-=
-\underset{\boldsymbol{\beta}\geq 0}{\operatorname{arg\,min}}
-\left\|
-\mathbf{y}-\mathbf{X}\boldsymbol{\beta}
-\right\|_2^2
+\hat} = \underset \geq 0}} \left| \mathbf - \mathbf\boldsymbol \right|_2^2
 $$
+
+where \mathbfDIL0 represents the observed chromatogram signal, \mathbfDIL1 contains the model signals for different indel sizes, and \hatDIL2} contains the fitted non-negative coefficients.
 
 where:
 
