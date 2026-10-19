@@ -54,10 +54,10 @@ The application constructs a set of candidate chromatogram models by shifting th
 
 Non-negative least squares is used to fit a weighted combination of these models to the aligned CRISPR trace:
 
-\[
+$$
 \mathbf{y} \approx \mathbf{X}\boldsymbol{\beta},
 \qquad \boldsymbol{\beta}\geq 0
-\]
+$$
 
 where:
 
