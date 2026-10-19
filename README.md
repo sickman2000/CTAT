@@ -52,11 +52,15 @@ This approach aims to preserve the correspondence between sequencing products wh
 
 The application constructs a set of candidate chromatogram models by shifting the WT fluorescence signal downstream of the cleavage site. The shifts correspond to candidate indel sizes, including a zero-shift WT model.
 
-Non-negative least squares is used to fit a weighted combination of these models to the aligned CRISPR trace:
+The model coefficients are estimated by solving a non-negative least-squares optimization problem:
 
 $$
-\mathbf{y} \approx \mathbf{X}\boldsymbol{\beta},
-\qquad \boldsymbol{\beta}\geq 0
+\hat{\boldsymbol{\beta}}
+=
+\underset{\boldsymbol{\beta}\geq 0}{\operatorname{arg\,min}}
+\left\|
+\mathbf{y}-\mathbf{X}\boldsymbol{\beta}
+\right\|_2^2
 $$
 
 where:
@@ -70,6 +74,8 @@ The coefficients are normalized to estimate the relative contribution of each mo
 $$
 \text{Editing efficiency} = 100\% - \text{WT fraction}
 $$
+
+where $\mathbf{y}$ represents the observed chromatogram signal, $\mathbf{X}$ contains the model signals for different indel sizes, and $\hat{\boldsymbol{\beta}}$ contains the fitted non-negative coefficients.
 
 The fit quality is summarized using \(R^2\).
 
